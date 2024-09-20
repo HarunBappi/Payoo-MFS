@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To Payoo FMS</title>
+    <!-- Tailwind And Daisy UI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script> 
+</head>
+<body>
+    <main class="flex justify-center">
+        <div class="mockup-phone">
+            <div class="camera"></div>
+            <div class="display">
+              <div class="artboard artboard-demo phone-3">
+                <!--Logo Image here-->
+                <div class="mt-3">
+                    <h1 class="text-xl font-bold">Welcome Payoo MFS</h1>
+                </div>
+                <div class="flex items-center mx-3 gap-3">
+                    <div class="w-3/6">
+                        <img src="./images/payoo.png" alt="">
+                    </div>
+                    <div class="stats shadow h-3/6 flex items-center">
+                        <div class="stat">
+                          <div class="stat-title">Available Balance</div>
+                          <div id="available-balance" class="stat-value text-center">9400</div>
+                        </div>
+                      </div>
+                </div>
+                <div class="divider"></div>
+                <!-- ADD-CashOut-Transaction Button Start -->
+                <div class="grid grid-cols-3 gap-2 mx-1">
+                <button id="select-add-money" class="btn btn-lg">Add Money</button>
+                <button id="select-cash-out" class="btn btn-lg">Cash Out</button>
+                <button class="btn btn-lg">Transaction History</button>
+                </div>
+                <!-- ADD-CashOut-Transaction Button end -->
+                <div class="divider"></div>
+                <!-- Add Money Form Start -->
+                <div id="add-money-field" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <form class="card-body">
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Add Money</span>
+                        </label>
+                        <input id="add-money-input" type="text" placeholder="Enter Amount" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Pin</span>
+                        </label>
+                        <input id="pin-input" type="password" placeholder="Enter Pin" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control mt-6">
+                        <button id="btn-add-money" class="btn btn-primary">Add Money</button>
+                      </div>
+                    </form>
+                  </div>
+                <!-- Add Money Form End --> 
+
+                            <!-- Cash-Out Form Start -->
+                <div id="cash-out-field" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <form class="card-body">
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Cash Out</span>
+                        </label>
+                        <input id="cash-out-input" type="text" placeholder="Enter Amount" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Pin</span>
+                        </label>
+                        <input id="cash-out-pin" type="password" placeholder="Enter Pin" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control mt-6">
+                        <button id="btn-cash-out" class="btn btn-primary">Cash Out</button>
+                      </div>
+                    </form>
+                  </div>
+                <!-- Cash Form End -->
+              </div>
+            </div>
+          </div>
+    </main>
+</body>
+</html>
