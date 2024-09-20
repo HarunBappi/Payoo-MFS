@@ -11,3 +11,13 @@ function getInputTextValue(id) {
   const textNumber = parseFloat(tetxInput);
   return textNumber;
 }
+
+// toggle Feature
+
+function showSectionById(id) {
+  document.getElementById("add-money-field").classList.add("hidden");
+  document.getElementById("cash-out-field").classList.add("hidden");
+  document.getElementById("transaction-history").classList.add("hidden");
+  // Show the ID click by section
+  document.getElementById(id).classList.remove("hidden");
+}

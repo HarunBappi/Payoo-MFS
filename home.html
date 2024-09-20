@@ -34,12 +34,12 @@
                 <div class="grid grid-cols-3 gap-2 mx-1">
                 <button id="select-add-money" class="btn btn-lg">Add Money</button>
                 <button id="select-cash-out" class="btn btn-lg">Cash Out</button>
-                <button class="btn btn-lg">Transaction History</button>
+                <button id="transaction-btn" class="btn btn-lg">Transaction History</button>
                 </div>
                 <!-- ADD-CashOut-Transaction Button end -->
                 <div class="divider"></div>
                 <!-- Add Money Form Start -->
-                <div id="add-money-field" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <div id="add-money-field" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                     <form class="card-body">
                       <div class="form-control">
                         <label class="label">
@@ -61,7 +61,7 @@
                 <!-- Add Money Form End --> 
 
                             <!-- Cash-Out Form Start -->
-                <div id="cash-out-field" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <div id="cash-out-field" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                     <form class="card-body">
                       <div class="form-control">
                         <label class="label">
@@ -81,6 +81,14 @@
                     </form>
                   </div>
                 <!-- Cash Form End -->
+                 <!-- Transaction History start -->
+                  <div id="transaction-history" class="hidden mb-5">
+                    <h2 class="text-3xl">Transaction history</h2>
+                    <div id="transaction-container" class="space-y-5">
+
+                    </div>
+                  </div>
+                 <!-- Transaction History end -->
               </div>
             </div>
           </div>
@@ -88,5 +96,6 @@
     <script src="./js/utilities.js"></script>
     <script src="./js/addmoney.js"></script>
     <script src="./js/cashout.js"></script>
+    <script src="./js/features.js"></script>
 </body>
 </html>
