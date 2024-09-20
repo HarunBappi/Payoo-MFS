@@ -19,7 +19,6 @@ document
     // Transaction history by Create Element
     const p = document.createElement("p");
     p.innerText = `
-   added: ${addMoney} tk. New Balance: ${updateBalance}
-  `;
+   added: ${addMoney} tk. New Balance: ${updateBalance}`;
     document.getElementById("transaction-container").appendChild(p);
   });
